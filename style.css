@@ -1,0 +1,36 @@
+p {
+color: #000;
+background-color: #fff;
+    text-align: center;
+        font-family: "Open Sans";
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+            line-height: normal;
+	overflow: scroll;
+padding: 8px 16px;
+	border: 1px;
+	margin: 32px;
+        border-style: solid;
+	    border-color: #0F1264;
+	    border-radius: 4px;
+a:hover {
+    text-decoration: none;}
+}
+.quote {
+color: #000;
+        font-family: "Dai Banna SIL";
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: 400;
+line-height: normal;
+}
+.normaltext {
+background-color: #D9D9D9;
+color: #000;
+        font-family: "Dai Banna SIL";
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 400;
+line-height: normal;
+}
