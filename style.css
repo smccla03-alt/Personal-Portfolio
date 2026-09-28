@@ -12,7 +12,7 @@ a:hover {
     color: #000000;
     background-color: #FFFFFF;
     font-family: "Dai Banna SIL";
-    font-size: 6 rem;
+    font-size: 6rem;
     font-weight: 400;
     line-height: normal;
     padding: 24px;
@@ -32,6 +32,18 @@ a:hover {
     background-color: #0F1264;
     color: #fff;
 }   
+.copyright {
+    color: #000;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: end;
+    flex-align: end;
+
+}
 .lower-image {
     width: 600px;
     height: 400px;
@@ -46,6 +58,8 @@ a:hover {
     padding: 24px;
     margin: 45px;
     border: 30px solid #0F1264;
+    background: url (./assets/image1.jpg); 
+    bacground repeat: no-repeat;
 }
 .project {
     background-color: #D9D9D9;
@@ -86,7 +100,7 @@ img {
     height: auto;
 }
 .header {
-   color: #000;
+   color: #000000;
 text-align: center;
 font-family: "Open Sans";
 font-size: 2rem;
@@ -97,7 +111,7 @@ line-height: normal;
    flex-direction: row;
    justify-content: start;
    align-items: center;
-   gap: 0.5rem;
+   gap: 2.63rem;
 }
 .container {
     display: flex;
@@ -117,3 +131,11 @@ line-height: normal;
         gap: 1.5rem;
     }
 }a
+.contact{
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
