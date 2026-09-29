@@ -41,7 +41,7 @@ a:hover {
     font-weight: 400;
     line-height: normal;
     justify-content: end;
-    flex-align: end;
+    flex-grow: end;
 
 }
 .lower-image {
@@ -58,8 +58,8 @@ a:hover {
     padding: 24px;
     margin: 45px;
     border: 30px solid #0F1264;
-    background: url (./assets/image1.jpg); 
-    bacground repeat: no-repeat;
+    background: url(./assets/image1.jpg); 
+    background-repeat: no-repeat;
 }
 .project {
     background-color: #D9D9D9;
