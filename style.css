@@ -8,6 +8,7 @@ p {
 a:hover {
     text-decoration: none;
 }
+            <! These are the styles for the quote and normal text. -->
 .quote {
     color: #000000;
     background-color: #FFFFFF;
@@ -42,8 +43,8 @@ a:hover {
     line-height: normal;
     justify-content: end;
     flex-grow: end;
-
 }
+            <! These are the styles for the images. -->
 .lower-image {
     width: 600px;
     height: 400px;
@@ -51,6 +52,8 @@ a:hover {
     padding: 24px;
     margin: 45px;
     border: 30px solid #0F1264;
+    background: url(./assets/image2.jpg);
+    background-repeat: no-repeat;
 }
 .hero-image {
     width: 120rem;
@@ -65,13 +68,59 @@ a:hover {
     background-color: #D9D9D9;
     color: #000000;
     border: 20px solid #0F1264;
+    border-radius: 1.25rem;
     padding: 0px;
     margin: 0px;
+    font-family: "Dai Banna SIL";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
+.img {
+    max-width: 100%;
+    height: auto;
+}
+            <! These are the styles for the logo and social media icons. -->
 .logo {
     width: 150px;
     height: auto;
 }
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 2.63rem;
+}
+.instagram_icon {
+    width: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 2.63rem;
+}
+.figma_icon {
+    width: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 2.63rem;
+}
+.linkedin_icon {
+    width: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 2.63rem;
+}
+                <! These are the styles for the headings. -->
 .h1 {
     color: #000000;
     font-family: "Dai Banna SIL";
@@ -95,10 +144,7 @@ a:hover {
     font-weight: 400;
     line-height: normal;
 }
-img {
-    max-width: 100%;
-    height: auto;
-}
+                <! These are the styles for the header and footer. -->
 .header {
    color: #000000;
 text-align: center;
@@ -130,11 +176,21 @@ line-height: normal;
         flex-direction: row;
         gap: 1.5rem;
     }
-}a
 .contact{
     color: #000000;
     font-family: "Open Sans";
     font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 1.25rem;
+    background: #FFF;
+}
+.footer{
+    color: #000;    
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
