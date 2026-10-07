@@ -16,9 +16,10 @@ a:hover {
     font-size: 6rem;
     font-weight: 400;
     line-height: normal;
-    padding: 24px;
-    margin: 45px;
-    border: 10px solid #0F1264;
+    padding: 30px;
+    margin: 0px;
+    border: 40px solid #0F1264;
+    margin-top: 50px;
 }
 .normaltext {
     background-color: #D9D9D9;
@@ -35,7 +36,7 @@ a:hover {
 }   
 .copyright {
     color: #000;
-    text-align: center;
+    text-align: end;
     font-family: "Open Sans";
     font-size: 1rem;
     font-style: normal;
@@ -44,25 +45,39 @@ a:hover {
     justify-content: end;
     flex-grow: end;
 }
+.text-overlay{
+    color: white;
+    text-align: center;
+    font-family: "Droid Serif";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 /* These are the styles for the images. */
 .lower-image {
-    width: 600px;
-    height: 400px;
-    object-fit: center;
-    padding: 24px;
-    margin: 45px;
-    border: 30px solid #0F1264;
-    background: url(./assets/image2.jpg);
+    width: 1482px;
+    height: 1112px;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 737/553;
+    padding: 0px;
+    margin: 0px;
+    border: 100px solid #0F1264;
+    background: url(./assets/IMG_7723.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .hero-image {
-    width: 120rem;
-    height: 49.3125rem;
+    width: 1920px;
+    height: 538px;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 389/109;
     padding: 24px;
     margin: 45px;
     border: 30px solid #0F1264;
-    background: url(./assets/image1.jpg); 
+    background: url(./assets/IMG_7984.jpg); 
     background-repeat: no-repeat;
 }
 .project {
@@ -78,21 +93,41 @@ a:hover {
     font-weight: 400;
     line-height: normal;
 }
-.img {
-    max-width: 100%;
-    height: auto;
+.imgvertical {
+    width: 400px;
+    height: 600px;
+
+}
+.imghorizontal{
+    width: 600px;
+    height: 400px;
+
 }
 /* These are the styles for the logo and social media icons. */
 .logo {
     width: 10rem;
     height: 10rem;
     display: flex;
-    justify-content: left;
 }
 .logo-container {
     display: flex;
     flex-direction: row;
     justify-content: start;
+    align-items: center;
+    gap: 2.63rem;
+}
+.bottomlogo {
+    width: 10rem;
+    height: 10rem;
+    display: center;
+    justify-content: left;
+    align-items: center;
+    justify-content: end
+}   
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 2.63rem;
 }
@@ -168,6 +203,11 @@ a:hover {
     align-items: center;
     gap: 0.75rem;
 }
+.imgage-containter {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} 
 .child{
     display: flex;
     flex-direction: row;
