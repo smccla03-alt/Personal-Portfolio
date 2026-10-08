@@ -173,13 +173,17 @@ a:hover {
     align-items: center;
     justify-content: end
 }   
-.social-media {
+.social-links {
     display: flex;
+    gap: 4rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 25%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2.63rem;
-}
+}   
 .instagram_icon {
     width: 50px;
     height: auto;
