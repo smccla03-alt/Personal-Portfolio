@@ -54,60 +54,109 @@ a:hover {
     font-weight: 700;
     line-height: normal;
 }
-/* These are the styles for the images. */
+/* These are the styles for the lower image. */
 .lower-image {
-    width: 1482px;
-    height: 1112px;
-    object-fit: cover;
-    object-position: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1921px;
     aspect-ratio: 737/553;
     padding: 0px;
     margin: 0px;
     border: 100px solid #0F1264;
     background: url(./assets/IMG_7723.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+}
+/* These are the hero images. */
+.hero-image {
+    width: 100%;
+    aspect-ratio: 389/109;
+    padding: 0px;
+    margin: 45px 0px 0px 0px;
+    border: 30px solid #0F1264;
+    box-sizing: border-box;
+    background: url(./assets/IMG_7984.jpg);
+    position: relative; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .hero-image {
-    width: 1920px;
-    height: 538px;
-    object-fit: cover;
-    object-position: center;
-    aspect-ratio: 389/109;
-    padding: 24px;
-    margin: 45px;
-    border: 30px solid #0F1264;
-    background: url(./assets/IMG_7984.jpg); 
-    background-repeat: no-repeat;
+    position: relative;
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.hero-content h1 {
+    font-family: "Dai Banna SIL";
+    font-size: 4rem;
+    line-height: 1;
+    margin: 0 0 2rem 0;
+}
+.hero-content a {
+    display: inline-block;
+    background-color: white;
+    color: #000000;
+    padding: 10px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+.hero-content a:hover {
+    color: #000000;
+}
+/* These are the styles for the projects. */
+.projects {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
 }
 .project {
     background-color: #D9D9D9;
     color: #000000;
     border: 20px solid #0F1264;
     border-radius: 1.25rem;
-    padding: 0px;
-    margin: 0px;
+    padding: 20px;
+    margin: 0;
     font-family: "Dai Banna SIL";
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
+.project h1 {
+    font-family: "Dai Banna SIL";
+    font-size: 3rem;
+    margin: 0 0 4rem 0;
+}
+.project p {
+    font-family: "Dai Banna SIL";
+    font-size: 1.25rem;
+    margin: 0;
+    line-height: 1.4;
+}
+/* These are the styles for the images. */
 .imgvertical {
     width: 400px;
     height: 600px;
-
 }
 .imghorizontal{
     width: 600px;
     height: 400px;
-
 }
 /* These are the styles for the logo and social media icons. */
-.logo {
+.logo-img{
     width: 10rem;
     height: 10rem;
-    display: flex;
+    display: block;
 }
 .logo-container {
     display: flex;
@@ -213,24 +262,41 @@ a:hover {
     flex-direction: row;
     gap: 0.75rem;
 }
-@media screen and (max-width: 320px){
-    .container {
-        display: flex;
-        flex-direction: row;
-        gap: 1.5rem;
-    }}
+            @media screen and (max-width: 600px){
+                .container {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1.5rem;
+                }
+                .projects {
+                    flex-direction: column;
+                }
+                .lower-image {
+                    width: 90%;
+                    border-width: 20px;
+                }
+                .hero-content h1 {
+                    font-size: 2rem;
+                }
+                .hero-content a {
+                    font-size: 1rem;
+                    padding: 8px 20px;
+                }
+            }
 .contact {
-    color: #000000;
+    color: #000;
     font-family: "Open Sans";
-    font-size: 3rem;
+    font-size: 48px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    border-radius: 1.25rem;
+    width: 400px;
+    height: 76px;
     background: #FFF;
+    border-radius: 20px;
 }
 .footer {
-    color: #000;    
+    color: #000;
     text-align: center;
     font-family: "Open Sans";
     font-size: 2.5rem;
@@ -242,4 +308,22 @@ a:hover {
     justify-content: start;
     align-items: center;
     gap: 2.63rem;
+}
+/* These are for the header/ nagication links. */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
 }
