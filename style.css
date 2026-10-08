@@ -152,14 +152,6 @@
     display: flex;
     flex-direction: row;
     gap: 2.63rem;
-}
-.bottomlogo {
-    width: 10rem;
-    height: 10rem;
-    display: center;
-    justify-content: left;
-    align-items: center;
-    justify-content: end
 }   
 .social-links {
     display: flex;
@@ -197,7 +189,7 @@
     align-items: center;
     gap: 2.63rem;
 }
-                    /* These are the styles for the headings. */
+                    /* These are the styles for the headings? IDK if they are needed or not. */
 .h1 {
     color: #000000;
     font-family: "Dai Banna SIL";
@@ -221,7 +213,7 @@
     font-weight: 400;
     line-height: normal;
 }
-                    /* These are the styles for the header and footer. */
+                    /* These are the styles for the header and footer because there has to be somebody in charge. */
 .header {
     color: #000000;
     text-align: center;
@@ -309,7 +301,7 @@
     background: #FFF;
     border-radius: 20px;
 }
-                    /* These are for the header/ navigation links. */
+                    /* These are for the header/ navigation links because I got lost. */
 .site-header {
     display: flex;
     align-items: center;
@@ -327,17 +319,22 @@
     font-family: "Open Sans";
     font-size: 1rem;
 }
-/* These are for the footer links. */
+                    /* These are for the footer links. */
 .footer {
     position: relative;
     min-height: 400px;
     background-color: white;
     padding: 2rem;
     box-sizing: border-box;
+    font-family: "Open Sans";
 }
 .footer-logo {
-    width: 180px;
-    height: auto;
+    width: 10rem;
+    height: 10rem;
+    display: center;
+    justify-content: left;
+    align-items: center;
+    justify-content: end
 }
 .footer-nav {
     display: flex;
@@ -361,3 +358,8 @@
     font-style: normal;
     font-variation-settings: "wdth" 100;
 } 
+.dai-banna-sil-regular {
+    font-family: "Dai Banna SIL", serif;
+    font-weight: 400;
+    font-style: normal;
+}
