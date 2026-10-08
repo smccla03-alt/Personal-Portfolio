@@ -1,13 +1,3 @@
-p {
-    color: #000000;
-    font-family: "Open Sans";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-}
-a:hover {
-    text-decoration: none;
-}
 /* These are the styles for the quote and normal text. */
 .quote {
     color: #000000;
@@ -54,7 +44,7 @@ a:hover {
     font-weight: 700;
     line-height: normal;
 }
-/* These are the styles for the lower image. */
+                    /* These are the styles for the lower image. */
 .lower-image {
     box-sizing: border-box;
     width: 100%;
@@ -68,7 +58,7 @@ a:hover {
     background-size: cover;
     background-position: center;
 }
-/* These are the hero images. */
+                    /* These are the hero images. */
 .hero-image {
     width: 100%;
     aspect-ratio: 389/109;
@@ -112,7 +102,7 @@ a:hover {
 .hero-content a:hover {
     color: #000000;
 }
-/* These are the styles for the projects. */
+                    /* These are the styles for the projects. */
 .projects {
     display: flex;
     flex-direction: row;
@@ -143,7 +133,7 @@ a:hover {
     margin: 0;
     line-height: 1.4;
 }
-/* These are the styles for the images. */
+                    /* These are the styles for the images. */
 .imgvertical {
     width: 400px;
     height: 600px;
@@ -152,7 +142,7 @@ a:hover {
     width: 600px;
     height: 400px;
 }
-/* These are the styles for the logo and social media icons. */
+                    /* These are the styles for the logo and social media icons. */
 .logo-img{
     width: 10rem;
     height: 10rem;
@@ -161,8 +151,6 @@ a:hover {
 .logo-container {
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    align-items: center;
     gap: 2.63rem;
 }
 .bottomlogo {
@@ -176,13 +164,11 @@ a:hover {
 .social-links {
     display: flex;
     gap: 4rem;
-    position: absolute;
     bottom: 2rem;
-    left: 25%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2.63rem;
+    gap: 12rem;
 }   
 .instagram_icon {
     width: 50px;
@@ -211,7 +197,7 @@ a:hover {
     align-items: center;
     gap: 2.63rem;
 }
-/* These are the styles for the headings. */
+                    /* These are the styles for the headings. */
 .h1 {
     color: #000000;
     font-family: "Dai Banna SIL";
@@ -235,12 +221,12 @@ a:hover {
     font-weight: 400;
     line-height: normal;
 }
-/* These are the styles for the header and footer. */
+                    /* These are the styles for the header and footer. */
 .header {
     color: #000000;
     text-align: center;
     font-family: "Open Sans";
-    font-size: 2rem;
+    font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -254,16 +240,6 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0.75rem;
-}
-.imgage-containter {
-    display: block;
-    max-width: 100%;
-    height: auto;
-} 
-.child{
-    display: flex;
-    flex-direction: row;
     gap: 0.75rem;
 }
             @media screen and (max-width: 600px){
@@ -286,7 +262,41 @@ a:hover {
                     font-size: 1rem;
                     padding: 8px 20px;
                 }
-            }
+                .footer {
+                    min-height: 300px;
+                    padding: 1.5rem;
+                }   
+                .footer-logo {
+                    display: block;
+                    width: 100px;
+                    margin: 0 auto;
+                }
+                .footer-nav {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 1.5rem 2rem;
+                    margin-top: 2rem;
+                }
+                .footer-nav a {
+                    font-size: 1rem;
+                }
+                .social-links {
+                    position: static;
+                    justify-content: center;
+                    gap: 3rem;
+                    margin-top: 2rem;
+                }
+                .social-links img {
+                    width: 40px;
+                }
+                .copyright {
+                    position: static;
+                    text-align: right;
+                    font-size: 0.6rem;
+                    margin-top: 2rem;
+                }
+}
 .contact {
     color: #000;
     font-family: "Open Sans";
@@ -299,21 +309,7 @@ a:hover {
     background: #FFF;
     border-radius: 20px;
 }
-.footer {
-    color: #000;
-    text-align: center;
-    font-family: "Open Sans";
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    gap: 2.63rem;
-}
-/* These are for the header/ nagication links. */
+                    /* These are for the header/ navigation links. */
 .site-header {
     display: flex;
     align-items: center;
@@ -328,6 +324,40 @@ a:hover {
 .nav-links a {
     text-decoration: none;
     color: #000000;
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans";
     font-size: 1rem;
 }
+/* These are for the footer links. */
+.footer {
+    position: relative;
+    min-height: 400px;
+    background-color: white;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.footer-logo {
+    width: 180px;
+    height: auto;
+}
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.footer-nav a {
+    color: black;
+    text-decoration: none;
+}
+.footer a {
+    text-decoration: none;
+    color: #000;
+}
+/*Da fonts*/
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+} 
