@@ -111,10 +111,9 @@
 }
 .project {
     background-color: #D9D9D9;
-    color: #000000;
+    color: #0b0909;
     border: 20px solid #0F1264;
-    border-radius: 1.25rem;
-    padding: 20px;
+    padding: 30px;
     margin: 0;
     font-family: "Dai Banna SIL";
     font-size: 2.5rem;
@@ -152,6 +151,7 @@
     display: flex;
     flex-direction: row;
     gap: 2.63rem;
+    
 }   
 .social-links {
     display: flex;
@@ -254,6 +254,14 @@
                     font-size: 1rem;
                     padding: 8px 20px;
                 }
+                .site-header {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .nav-links {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
                 .footer {
                     min-height: 300px;
                     padding: 1.5rem;
@@ -269,6 +277,7 @@
                     justify-content: center;
                     gap: 1.5rem 2rem;
                     margin-top: 2rem;
+                    flex-direction: column;
                 }
                 .footer-nav a {
                     font-size: 1rem;
@@ -331,10 +340,9 @@
 .footer-logo {
     width: 10rem;
     height: 10rem;
-    display: center;
-    justify-content: left;
+    display: flex;
     align-items: center;
-    justify-content: end
+    justify-content: center;
 }
 .footer-nav {
     display: flex;
