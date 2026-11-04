@@ -234,7 +234,104 @@
     align-items: center;
     gap: 0.75rem;
 }
-            @media screen and (max-width: 600px){
+.contact {
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 400px;
+    height: 76px;
+    background: #FFF;
+    border-radius: 20px;
+}
+                    /* These are for the header/ navigation links because I got lost. */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 1rem;
+}
+.navbar {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff0000;
+    z-index: 1;
+}   
+.hamburger {
+    display: none;
+    color:#ff0000;
+    font-size: 20px;
+}
+.closex {
+    display: none;
+    font-size: 40%;
+    color: #ff0000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+                    /* These are for the footer links. */
+.footer {
+    position: relative;
+    min-height: 400px;
+    background-color: white;
+    padding: 2rem;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+.footer-logo {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.footer-nav a {
+    color: black;
+    text-decoration: none;
+}
+.footer a {
+    text-decoration: none;
+    color: #000;
+}
+/*Da fonts*/
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+} 
+.dai-banna-sil-regular {
+    font-family: "Dai Banna SIL", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+                    /* Note from class: media queries are always at the bottom of the css files so the files can be read correctly */
+            @media screen and (max-width: 768px){
                 .container {
                     display: flex;
                     flex-direction: row;
@@ -297,77 +394,21 @@
                     font-size: 0.6rem;
                     margin-top: 2rem;
                 }
-}
-.contact {
-    color: #000;
-    font-family: "Open Sans";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 400px;
-    height: 76px;
-    background: #FFF;
-    border-radius: 20px;
-}
-                    /* These are for the header/ navigation links because I got lost. */
-.site-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 30px;
-}
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-.nav-links a {
-    text-decoration: none;
-    color: #000000;
-    font-family: "Open Sans";
-    font-size: 1rem;
-}
-                    /* These are for the footer links. */
-.footer {
-    position: relative;
-    min-height: 400px;
-    background-color: white;
-    padding: 2rem;
-    box-sizing: border-box;
-    font-family: "Open Sans";
-}
-.footer-logo {
-    width: 10rem;
-    height: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.footer-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 3rem;
-}
-.footer-nav a {
-    color: black;
-    text-decoration: none;
-}
-.footer a {
-    text-decoration: none;
-    color: #000;
-}
-/*Da fonts*/
-.open-sans {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-} 
-.dai-banna-sil-regular {
-    font-family: "Dai Banna SIL", serif;
-    font-weight: 400;
-    font-style: normal;
-}
+                .navbar {
+                    display: block;
+                    position: absolute;
+                    top: auto;
+                    left: auto;
+                    right: auto;
+                    bottom: auto;
+                    width: auto;
+                    height: auto;
+                    background-color: none;
+                }
+                .hamburger {
+                    display: block;
+                }
+                .closex {
+                    display: block;
+                }
+            }
