@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html>
-    <head>
-<title> Samantha McClain's Portfolio Site </title>
-    </head>
+<head>
+    <title>Samantha McClain's Portfolio Site</title>
 <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,19 +8,36 @@
     rel="stylesheet">
 <!-- CSS -->
     <link rel="stylesheet" href="../style.css">
+<!-- JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $("document").ready(
+        function() {
+            $(".hamburger").click(() => $(".navbar").slideToggle());
+            $(".closex").click(() => $(".navbar").fadeOut());
+        }
+    )
+</script>
+<div class=navbar>
+    <!-- Other navbar stuff like your page links -->    
+    <div class="closex">&#x2715;</div>
+</div>
+<div class=hamburger>&#9776;</div>
 </head>
 <body>
-<!-- header -->
+    <!-- header -->
     <header class="site-header">
         <a href="../index.html">
             <img src="../assets/Logo.png" class="logo-img" alt="Samantha McClain logo">
         </a>
         <div class="nav-links">
-            <a href="./index.html">Home</a>
-            <p>About</p>
+            <a href="../index.html">Home</a>
+            <a href="../about">About</a>
             <a href="../bookdesign">Book Design</a>
             <a href="../uxdesign">UX Design</a>
-            <a href="../experimentaldesign">Experimental Design</a>
+            <a href="../risography">Risography</a>
             <a href="../newspaperandmagazinedesign">Newspaper and Magazine Design</a>
         </div>
     </header>
@@ -42,12 +57,36 @@ rel=”noopener noreferrer”
             alt="Samantha McClain logo" >
 <br>
         <div class="footer-nav">
-            <a href="./index.html">Home</a>
-            <p>About</p>
+            <a href="../index.html">Home</a>
+            <a href="../index.html">About</a>
             <a href="../bookdesign">Book Design</a>
             <a href="../uxdesign">UX Design</a>
-            <a href="../experimentaldesign">Experimental Design</a>
+            <a href="../risography">Risography</a>
             <a href="../newspaperandmagazinedesign">Newspaper and Magazine Design</a>
+        </div>
+<br>
+<br>
+<!-- social media -->
+        <div class="social-links">
+            <a href="https://www.instagram.com/seameme21/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="../assets/instagram.png"
+                    alt="Instagram">
+                </a>
+            <a href="https://www.figma.com/@samanthamcclain"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="../assets/figma.png"
+                    alt="Figma">
+            </a>
+            <a
+                href="https://www.linkedin.com/in/samantha-mcclain-873038149/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img src="../assets/linkedin.png"
+                    alt="LinkedIn">
+            </a>
         </div>
 <!-- copyright -->
 <br>

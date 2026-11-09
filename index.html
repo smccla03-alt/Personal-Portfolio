@@ -11,9 +11,14 @@
 <!-- JavaScript -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-    $(".hamburger").click(function() {$(".navbar").slideToggle();});
-    $(".closex").click(function() {$(".navbar").fadeOut();});
+    $("document").ready(
+        function() {
+            $(".hamburger").click(() => $(".navbar").slideToggle());
+            $(".closex").click(() => $(".navbar").fadeOut());
+        }
+    )
 </script>
 <div class=navbar>
     <!-- Other navbar stuff like your page links -->    
@@ -32,7 +37,7 @@
             <a href="./about">About</a>
             <a href="./bookdesign">Book Design</a>
             <a href="./uxdesign">UX Design</a>
-            <a href="./experimentaldesign">Experimental Design</a>
+            <a href="./risography">Risography</a>
             <a href="./newspaperandmagazinedesign">Newspaper and Magazine Design</a>
         </div>
     </header>
@@ -63,13 +68,6 @@
         <img src="./assets/IMG_7723.jpg" 
             alt="Crocheted project and supplies" class="lower-image"
         >
-<!-- quote -->
-        <p class="quote">
-            “Five people! So, five out of five. That's 50%”
-            <br>
-            - J-Fred, 2019
-        </p>
-    </main>
 <!-- footer -->
     <footer class="footer">
         <img
@@ -82,7 +80,7 @@
             <a href="./about">About</a>
             <a href="./bookdesign">Book Design</a>
             <a href="./uxdesign">UX Design</a>
-            <a href="./experimentaldesign">Experimental Design</a>
+            <a href="./risography">Risography</a>
             <a href="./newspaperandmagazinedesign">Newspaper and Magazine Design</a>
         </div>
 <br>
