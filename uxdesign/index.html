@@ -1,69 +1,85 @@
 <!DOCTYPE html>
-<html>
     <head>
-<title>
-    UX Design - Samantha McClain's Portfolio Site
-</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-<img src="./assets/Logo.png" class="logo"/>   
-<div class="header"></div> 
- <body>
+<title>UX/UI Design - Samantha McClain's Portfolio Site</title>
+<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" 
+    rel="stylesheet">
+<!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<!-- JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $("document").ready(
+        function() {
+            $(".hamburger").click(() => $(".navbar").slideToggle());
+            $(".closex").click(() => $(".navbar").fadeOut());
+        }
+    )
+</script>
+<div class=navbar>
+    <!-- Other navbar stuff like your page links -->    
+    <div class="closex">&#x2715;</div>
+</div>
+<div class=hamburger>&#9776;</div>
+</head>
+<body>
+<!-- header -->
+    <header class="site-header">
+        <a href="../index.html">
+            <img src="../assets/Logo.png" class="logo-img" alt="Samantha McClain logo">
+        </a>
+        <div class="nav-links">
             <a href="./index.html">Home</a>
-        </p>
-        <p>
-            <a href="./about">About</a>
-        </p>
-        <p>
-          <a href="./bookdesign">Book Design</a>
-        </p>
-        <p>
-           UX Design
-        </p>
-        <p>
-            <a href="./experimentaldesign">Experimental Design</a>
-        </p>
-        <p>
-            <a href="./newspaperandmagazinedesign">Newspaper and Magazine Design</a>
-        </p>
-</div class="header">
+            <a href="../about">About</a>
+            <a href="../bookdesign">Book Design</a>
+            <a href="../uxdesign">UX/UI Design</a>
+            <a href="../risography">Risography</a>
+            <a href="../newspaperandmagazinedesign">Newspaper and Magazine Design</a>
+        </div>
+    </header>
+<h1 class="h1"> UX/UI Design</h1>
+<!-- Current UX/UI Project-->
+<div class="current_projects">
+                <h3>Personal Portfolio Website</h3>
+                <p>A semester long project using VS Code and a spalsh of JavaScript to build a website showcasing my artworks and a record of my work.</p>
+                <img class="imghorizontal" src="../assets/Website.png" alt="Website"/>
+            </div>
+<!-- Projects for UX/UI Design -->
+        <div class="project">
+            <div class="project">
+                <h3>Habitat for Humanity Website</h3>
+                <p>This was a figma project for my UX design class. I wrorked in a group of four to select the organization, create a survey, and design the website interface.</p>
+                <img src="./assets/HHWeb.jpg" alt="HHWeb"/>
+            </div>
+        </div>
+        <div class="project">
+            <h3 class="h3">Green Route</h3>
+            <p>This was worked in a group of five, where we conducted user research and designed the mobile interface for the Green Route app. We designed an app based on transportaion around NWA and we think we could create a user friendly experience. We focused on usability and accessibility to ensure a seamless experience for all users. We also conducted usability testing to gather feedback and iteratively improve the design. Our task included making a interface fo the mobile and another set such as a desktop. My group decided to do the watch interface as well.</p>
+            <img src="./assets/GRMobile.jpg" alt="GreenRoute"/>
+        </div>
+        <div class="project">
+            <h3 class="h3">Adam's Coffee</h3>
+            <p>This was a project for my UX design class. I worked in a group to create a mobile app for a local coffee shop. We conducted user research and designed the interface with a focus on usability and aesthetics.</p>
+            <img src="./assets/ADCoffee.jpg" alt="ADCoffee"/>
+        </div>
+    </div>
+<!-- footer -->
+        <div class="footer-nav">
+            <a href="../index.html">Home</a>
+            <a href="../index.html">About</a>
+            <a href="../bookdesign">Book Design</a>
+            <a href="../uxdesign">UX/UI Design</a>
+            <a href="../risography">Risography</a>
+            <a href="../newspaperandmagazinedesign">Newspaper and Magazine Design</a>
+        </div>
+<!-- copyright -->
 <br>
-<h1>
-    UX Design
-</h1>
-<br>
-<h3 class="h3">Habitat for Humanity Website </h3>
-<p>This was a figma project for my UX design class. I wrorked in a group of four to select the organization, create a survey, and design the website interface.</p>
-<img src="./assets/HHWeb.jpg" alt="HHWeb"/>
-<br>
-<h3 class="h3">Green Route</h3>
-<p> This was worked in a group of five, where we conducted user research and designed the mobile interface for the Green Route app. We designed an app based on transportaion around NWA and we think we could create a user friendly experience. We focused on usability and accessibility to ensure a seamless experience for all users. We also conducted usability testing to gather feedback and iteratively improve the design. Our task included making a interface fo the mobile and another set such as a desktop. My group decided to do the watch interface as well.</p>
-<img src="./assets/GRMobile.jpg" alt="GreenRoute"/>
-<br>   
-<h3 class="h3">Adam's Coffee</h3>
-<p>This was a project for my UX design class. I worked in a group to create a mobile app for a local coffee shop. We conducted user research and designed the interface with a focus on usability and aesthetics.</p>
-<img src="./assets/ADCoffee.jpg" alt="ADCoffee"/>
-<br>
-<br/>
-        <p>
-            <a href="./index.html">Home</a>
-        </p>
-        <p>
-            <a href="./about">About</a>
-        </p>
-        <p>
-          <a href="./bookdesign">Book Design</a>
-        </p>
-        <p>
-           UX Design
-        </p>
-        <p>
-            <a href="./experimentaldesign">Experimental Design</a>
-        </p>
-        <p>
-            <a href="./newspaperandmagazinedesign">Newspaper and Magazine Design</a>
-        </p>
-<br>
-<p>
-    Copyright © 2026 Samantha McClain
-</p>
+        <div class="copyright">
+            <p>Copyright © 2026 Samantha McClain</p>
+        </div>
+    </footer>

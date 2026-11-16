@@ -9,6 +9,25 @@
 <!-- CSS -->
     <link rel="stylesheet" href="../style.css">
 </head>
+<!-- JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $("document").ready(
+        function() {
+            $(".hamburger").click(() => $(".navbar").slideToggle());
+            $(".closex").click(() => $(".navbar").fadeOut());
+        }
+    )
+</script>
+<div class=navbar>
+    <!-- Other navbar stuff like your page links -->    
+    <div class="closex">&#x2715;</div>
+</div>
+<div class=hamburger>&#9776;</div>
+</head>
+<body>
 <!-- header -->
     <header class="site-header">
         <a href="../index.html">
@@ -18,16 +37,24 @@
             <a href="./index.html">Home</a>
             <a href="../about">About</a>
             <a href="../bookdesign">Book Design</a>
-            <a href="../uxdesign">UX Design</a>
+            <a href="../uxdesign">UX/UI Design</a>
             <a href="../experimentaldesign">Experimental Design</a>
-            <p>Newspaper and Magazine Design</p>
+            <a href="./newspaperandmagazinedesign.html">Newspaper and Magazine Design</a>
         </div>
     </header>
+<h1 class="h1"> Newspaper and Magazine Design</h1>
+<!-- Current Newspaper and Magazine Project -->
+        <div class="current_projects">
+                <h3>Magazine Submissions</h3>
+                <p> I am no longer writing stories for the newspaper, however, I still want to have pieces to submit into magazines and publications.
+So, I look into different literary magazines to submit my pieces of artwork into such as the Diamond Line Literary Magazine, but I am still scouting out different magazines over the United States to submit my art pieces. </p>
+                <img class="imgvertical" src="../assets/DiamondLineCover.jpg"/>
+            </div>
 <!-- Projects for Newspaper and Magazine Design -->
         <div class="projects">
             <div class="project">
                 <h3>Issue 11: Diamond Line Magazine</h3>
-                <p> This was a colaborative project with a team of designers to create a unique magazine layout and design. The team created a theme and hosted an open art submission to gather poetry, prose, and art for the Daimond Line, a literary magazine for the University of Arkansas. My role was to provide the layout of the magazine and create over 15 illustrations to further support the stories and create cohesive magazine.  </p>
+                <p> This was a colaborative project with a team of designers to create a unique magazine layout and design. The team created a theme and hosted an open art submission to gather poetry, prose, and art for the Daimond Line, a literary magazine for the University of Arkansas. My role was to provide the layout of the magazine and create over 15 illustrations to further support the stories and create cohesive magazine.</p>
                 <img class="imgvertical" src="../assets/DiamondLineCover.jpg"/>
             </div>
             <div class="project">
@@ -43,19 +70,13 @@
             </div>
         </div>
 <!-- footer -->
-    <footer class="footer">
-        <img
-            src="../assets/Logo.png"
-            class="footer-logo" 
-            alt="Samantha McClain logo" >
-<br>
         <div class="footer-nav">
             <a href="./index.html">Home</a>
             <a href="../about">About</a>
             <a href="../bookdesign">Book Design</a>
-            <a href="../uxdesign">UX Design</a>
+            <a href="../uxdesign">UX/UI Design</a>
             <a href="../experimentaldesign">Experimental Design</a>
-            <p>Newspaper and Magazine Design</p>
+            <a href="../newspaperandmagazinedesign">Newspaper and Magazine Design</a>
         </div>
 <!-- copyright -->
 <br>

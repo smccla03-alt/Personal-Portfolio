@@ -10,6 +10,25 @@
 <!-- CSS -->
     <link rel="stylesheet" href="../style.css">
 </head>
+<!-- JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $("document").ready(
+        function() {
+            $(".hamburger").click(() => $(".navbar").slideToggle());
+            $(".closex").click(() => $(".navbar").fadeOut());
+        }
+    )
+</script>
+<div class=navbar>
+    <!-- Other navbar stuff like your page links -->    
+    <div class="closex">&#x2715;</div>
+</div>
+<div class=hamburger>&#9776;</div>
+</head>
+<body>
 <!-- header -->
     <header class="site-header">
         <a href="../index.html">
@@ -19,13 +38,13 @@
             <a href="./index.html">Home</a>
             <a href="../about">About</a>
             <a href="../bookdesign">Book Design</a>
-            <a href="../uxdesign">UX Design</a>
+            <a href="../uxdesign">UX/UI Design</a>
             <a href="../risography">Risography</a>
             <a href="../newspaperandmagazinedesign">Newspaper and Magazine Design</a>
         </div>
     </header>
 <h1>Risography</h1>
-<! -- Current Riso Project -->
+<!-- Current Riso Project -->
         <div class="current_projects">
                 <h3>Riso Class Calender</h3>
                 <p>This was a part collaborative project of 12 students and one professor. I was given the opportunity to make a calendar cover for the Risography class using four colors.</p>
@@ -68,17 +87,11 @@ Various other color combinations have been used. Such as hunter green with flat 
             </div>
         </div>
 <!-- footer -->
-    <footer class="footer">
-        <img
-            src="../assets/Logo.png"
-            class="footer-logo" 
-            alt="Samantha McClain logo" >
-<br>
         <div class="footer-nav">
             <a href="../index.html">Home</a>
             <a href="../index.html">About</a>
             <a href="../bookdesign">Book Design</a>
-            <a href="../uxdesign">UX Design</a>
+            <a href="../uxdesign">UX/UI Design</a>
             <a href="../risography">Risography</a>
             <a href="../newspaperandmagazinedesign">Newspaper and Magazine Design</a>
         </div>
