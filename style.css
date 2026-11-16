@@ -103,11 +103,38 @@
     color: #000000;
 }
                     /* These are the styles for the projects. */
-.projects {
+.current_projects {
+    background: #D9D9D9;
+    padding: 30px;
+    margin: 0;
     display: flex;
     flex-direction: row;
     gap: 2rem;
     padding: 2rem;
+}
+.selected-works {
+    background-color: #D9D9D9;
+    color: #0b0909;
+    padding: 30px;
+    margin: 0;
+    gap: 1rem;
+    font-family: "Dai Banna SIL";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.creative-archive {
+    background-color: #D9D9D9;
+    color: #0b0909;
+    padding: 30px;
+    margin: 0;
+    gap: 1rem;
+    font-family: "Dai Banna SIL";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 .project {
     background-color: #D9D9D9;
@@ -147,14 +174,12 @@
 .imgvertical {
     width: 400px;
     height: 600px;
-    display: right;
-    flex-direction: right;
 }
 .imghorizontal{
     width: 600px;
     height: 400px;
     display: right;
-    flex-direction: right;
+    direction: right;
 }
                     /* These are the styles for the logo and social media icons. */
 .logo-img{
@@ -259,6 +284,18 @@
     width: 400px;
     height: 76px;
     background: #FFF;
+    border-radius: 20px;
+}
+.magazineacceptance {
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 400px;
+    height: 76px;
+    background: #D9D9D9;
     border-radius: 20px;
 }
                     /* These are for the header/ navigation links because I got lost. */
