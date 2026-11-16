@@ -104,16 +104,15 @@
 }
                     /* These are the styles for the projects. */
 .current_projects {
-    background: #D9D9D9;
+    background: #8589B9;
     padding: 30px;
     margin: 0;
     display: flex;
-    flex-direction: row;
     gap: 2rem;
     padding: 2rem;
 }
 .selected-works {
-    background-color: #D9D9D9;
+    background-color: #B68A43;
     color: #0b0909;
     padding: 30px;
     margin: 0;
@@ -125,7 +124,7 @@
     line-height: normal;
 }
 .creative-archive {
-    background-color: #D9D9D9;
+    background-color: #76546F;
     color: #0b0909;
     padding: 30px;
     margin: 0;
@@ -191,9 +190,9 @@
     display: flex;
     flex-direction: row;
     gap: 2.63rem;
-    
 }   
 .social-links {
+    color:#FFFFFF;
     display: flex;
     gap: 4rem;
     bottom: 2rem;
@@ -203,6 +202,7 @@
     gap: 12rem;
 }   
 .instagram_icon {
+    color: #FFFFFF;  
     width: 50px;
     height: auto;
     display: flex;
@@ -212,6 +212,7 @@
     gap: 2.63rem;
 }
 .figma_icon {
+    color: #FFFFFF;
     width: 50px;
     height: auto;
     display: flex;
@@ -221,6 +222,7 @@
     gap: 2.63rem;
 }
 .linkedin_icon {
+    color: #FFFFFF;
     width: 50px;
     height: auto;
     display: flex;
@@ -231,6 +233,7 @@
 }
                     /* These are the styles for the headings? IDK if they are needed or not. */
 .h1 {
+    background-color: #D9D9D9;
     color: #000000;
     font-family: "Dai Banna SIL";
     font-size: 4rem;
@@ -300,12 +303,14 @@
 }
                     /* These are for the header/ navigation links because I got lost. */
 .site-header {
+    background-color: #D9D9D9;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 30px;
 }
 .nav-links {
+    background-color: #D9D9D9;
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -356,15 +361,24 @@
     justify-content: center;
 }
 .footer-nav {
+    background-color: #34386F;
+    font-family: "Open Sans";
+    font-size: 1rem;
+    font-style: normal;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3rem;
-}
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 0;
+    gap: 1rem;
+    margin-top: 6rem;
+    color: white;
+}   
 .footer-nav a {
-    color: black;
+    color: white;
     text-decoration: none;
-}
+}   
 .footer a {
     text-decoration: none;
     color: #000;
